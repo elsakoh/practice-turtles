@@ -1,0 +1,11 @@
+j1: c2 c3 c4 c1 c5
+j2: c4 c3 c1 c5 c2
+j3: c4 c3 c5 c1 c2
+j4: c2 c3 c4 c1 c5
+j5: c4 c1 c2 c5 c3
+
+c1: j2 j5 j1 j3 j4
+c2: j3 j5 j4 j2 j1
+c3: j1 j4 j5 j2 j3
+c4: j5 j1 j4 j3 j2
+c5: j4 j3 j1 j5 j2

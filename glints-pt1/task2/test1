@@ -1,0 +1,9 @@
+j1: c3 c4 c2 c1
+j2: c2 c3 c1 c4
+j3: c4 c2 c3 c1
+j4: c4 c3 c1 c2
+
+c1: j4 j1 j2 j3
+c2: j1 j2 j4 j3
+c3: j1 j3 j4 j2
+c4: j1 j3 j4 j2

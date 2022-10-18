@@ -1,0 +1,17 @@
+j1: c8 c4 c2 c3 c7 c6 c1 c5
+j2: c3 c5 c7 c8 c1 c6 c2 c4
+j3: c5 c1 c4 c2 c6 c7 c8 c3
+j4: c5 c3 c1 c6 c2 c8 c4 c7
+j5: c7 c3 c4 c1 c2 c6 c5 c8
+j6: c6 c5 c4 c1 c3 c2 c7 c8
+j7: c8 c2 c6 c4 c1 c3 c5 c7
+j8: c2 c1 c5 c4 c6 c7 c8 c3
+
+c1: j4 j5 j1 j7 j8 j6 j3 j2
+c2: j6 j4 j2 j1 j5 j3 j8 j7
+c3: j6 j2 j3 j4 j8 j7 j1 j5
+c4: j2 j1 j3 j5 j6 j4 j8 j7
+c5: j3 j5 j8 j7 j6 j1 j2 j4
+c6: j8 j5 j6 j4 j2 j7 j3 j1
+c7: j5 j8 j1 j3 j6 j4 j7 j2
+c8: j5 j3 j7 j8 j1 j6 j4 j2

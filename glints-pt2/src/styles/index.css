@@ -1,0 +1,106 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+nav div ul li {
+    transition: border 0.5s;
+}
+
+
+.la-h1 {
+    @apply font-bold lato text-5xl;
+}
+
+.la-h2 {
+    @apply text-3xl font-bold lato;
+}
+
+.la-h3 {
+    @apply font-semibold text-xl lato;
+}
+
+.la-h4 {
+    @apply font-medium text-xl lato;
+}
+
+.la-p {
+    @apply font-medium lato;
+}
+
+.poppins {
+    font-family: "Poppins", "Sans Serif";
+}
+.karla {
+    font-family: "Karla", "Sans Serif";  
+}
+
+.lato {
+    font-family: "Lato", "Sans Serif";
+}
+
+.tou-anchor {
+    display: block;
+    position: relative;
+    top: -180px;
+    visibility: visible;
+}
+
+.disabled-link {
+    pointer-events: none;
+}
+
+.page {
+    position: static;
+    margin-top: 150px;
+    padding: 24px 56px;
+    flex: 1 0 auto;
+    z-index: 0;
+}
+
+/* advanced - enter transition 800ms, exit 150ms */
+.fade-appear,
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+    transform: translateY(-10px);
+}
+.fade-appear p,
+.fade-enter p {
+    transform: translateY(-5px);
+    opacity: 0;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms linear 150ms, transform 300ms ease-out 150ms;
+}
+.fade-appear-active p,
+.fade-enter.fade-enter-active p {
+    transform: translateY(0);
+    opacity: 1;
+}
+.fade-appear-active p:nth-child(2),
+.fade-enter.fade-enter-active p:nth-child(2) {
+    transition: opacity 300ms linear 300ms, transform 300ms ease-out 300ms;
+}
+.fade-appear-active p:nth-child(3),
+.fade-enter.fade-enter-active p:nth-child(3) {
+    transition: opacity 300ms linear 400ms, transform 300ms ease-out 400ms;
+}
+.fade-appear-active p:nth-child(4),
+.fade-enter.fade-enter-active p:nth-child(4) {
+    transition: opacity 300ms linear 500ms, transform 300ms ease-out 500ms;
+}
+.fade-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 150ms linear, transform 150ms ease-in;
+}
